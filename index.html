@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== PRELOAD CRITICAL RESOURCES ===============-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICON ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive gym website - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__wrapper">
+          <div class="nav__logo">
+                    <img
+                      src="assets/img/logo-nav.png"
+                      alt="logo"
+                      class="nav__logo-img"
+                    />
+            <div class="nav__brand">
+              <span class="nav__brand-main">MFZ</span>
+              <span class="nav__brand-sub">My Fitness Zone</span>
+            </div>
+          </div>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#program" class="nav__link">Programs</a>
+              </li>
+              <li class="nav__item">
+                <a href="#choose" class="nav__link">Why MFZ</a>
+              </li>
+              <li class="nav__item">
+                <a href="#equipment" class="nav__link">Equipments</a>
+              </li>
+              <li class="nav__item">
+                <a href="#gallery" class="nav__link">Transformations</a>
+              </li>
+              <li class="nav__item">
+                <a href="#footer" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+  <a
+    href="https://wa.me/919925826698"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="nav__button"
+  >
+    Inquiry Now
+  </a>
+
+  <div class="nav__toggle" id="nav-toggle">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+  </div>
+</div>
+
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h2 class="home__subtitle">TRANSFORM YOUR</h2>
+            <h1 class="home__title">BODY SHAPE</h1>
+            <p class="home__description">
+              Join thousands of members who have transformed their bodies.
+              Expert trainers, proven programs, and unlimited support await you.
+            </p>
+           <div class="home__buttons">
+  <a
+  href="https://www.instagram.com/p/DOTf4g_CcAo/?hl=en"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="button button--primary"
+>
+  Get Started With MFZ
+</a>
+
+
+  <a
+    href="https://www.instagram.com/p/DSMnR9UDJlP/?hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="button button--secondary"
+  >
+    <i class="ri-play-fill"></i> Watch Demo
+  </a>
+</div>
+
+            <div class="home__stats">
+              <div class="home__stat">
+                <h3>200+</h3>
+                <p>Active Members</p>
+              </div>
+              <div class="home__stat">
+                <h3>500+</h3>
+                <p>Success Stories</p>
+              </div>
+              <div class="home__stat">
+                <h3>20+</h3>
+                <p>Expert Trainers</p>
+              </div>
+            </div>
+          </div>
+
+          <img src="assets/img/home-img.png" alt="home" class="home__img" />
+        </div>
+      </section>
+
+      <!--==================== MOTIVATION BANNER ====================-->
+      <section class="motivation section">
+        <div class="motivation__container container">
+          <div class="motivation__content">
+            <h2 class="motivation__title">
+              "The only bad workout is the one that didn't happen"
+            </h2>
+            <p class="motivation__text">
+              Your fitness journey starts with a single step. Our expert
+              trainers and supportive community are here to guide you every step
+              of the way.
+            </p>
+            <button class="button button--primary">
+              Start Your Journey Today
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== LOGOS ====================-->
+      <section class="logos section">
+        <div class="logos__container container grid">
+          <img loading="lazy" src="assets/img/logo1.png" alt="logo" class="logos__img" />
+          <img loading="lazy" src="assets/img/logo2.png" alt="logo" class="logos__img" />
+          <img loading="lazy" src="assets/img/logo3.png" alt="logo" class="logos__img" />
+          <img loading="lazy" src="assets/img/logo4.png" alt="logo" class="logos__img" />
+        </div>
+      </section>
+
+      <!--==================== PROGRAM ====================-->
+      <section class="program section" id="program">
+        <div class="program__container container">
+          <div class="section__data">
+            <h2 class="section__subtitle">Our Program</h2>
+            <div class="section__titles">
+              <h1 class="section__title-border">BUILD YOUR</h1>
+              <h1 class="section__title">BEST BODY</h1>
+            </div>
+          </div>
+
+          <div class="program__content grid">
+            <article class="program__card">
+              <img loading="lazy" src="assets/img/flex-muscle.png" height="80" width="80" alt="flex muscle" />
+              <h3 class="program__title">Flex Muscle</h3>
+              <p class="program__description">
+                Creating tension that's temporarily making the muscle fibers
+                smaller or contracted.
+              </p>
+              <a href="#" class="program__button">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </article>
+
+            <article class="program__card">
+              <img loading="lazy" src="assets/img/cardio.png" height="80" width="80" alt="cardio" />
+              <h3 class="program__title">Cardio Exercise</h3>
+              <p class="program__description">
+                Exercise your heart rate up and keeps it up for a prolonged
+                period of time.
+              </p>
+              <a href="#" class="program__button">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </article>
+
+            <article class="program__card">
+              <img loading="lazy" src="assets/img/yoga.png" height="85" width="85" alt="yoga" />
+              <h3 class="program__title">Basic Yoga</h3>
+              <p class="program__description">
+                Diaphragmatic this is the most common breathing technique you'll
+                find in yoga.
+              </p>
+              <a href="#" class="program__button">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </article>
+
+            <article class="program__card">
+              <img loading="lazy" src="assets/img/weight-lifting.png" height="100" width="100" alt="weight lifting" />
+              <h3 class="program__title">Weight Lifting</h3>
+              <p class="program__description">
+                Attempts a maximum weight single lift of a barbell loaded with
+                weight plates.
+              </p>
+              <a href="#" class="program__button">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== GYM EQUIPMENT ====================-->
+      <section class="equipment section" id="equipment">
+        <div class="equipment__container container">
+          <div class="section__data">
+            <h2 class="section__subtitle">Gym Equipment</h2>
+            <div class="section__titles">
+              <h1 class="section__title-border">STATE OF THE</h1>
+              <h1 class="section__title">ART EQUIPMENT</h1>
+            </div>
+          </div>
+
+          <div class="equipment__content grid">
+            <div class="equipment__card">
+              <div class="equipment__image">
+                <img loading="lazy"
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=400&fit=crop"
+                  alt="dumbbells"
+                  class="equipment__img"
+                />
+              </div>
+              <h3 class="equipment__title">Dumbbells & Weights</h3>
+              <p class="equipment__description">
+                Premium adjustable dumbbells for strength training
+              </p>
+            </div>
+
+            <div class="equipment__card">
+              <div class="equipment__image">
+                <img loading="lazy"
+                  src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-willpicturethis-1954524.jpg&fm=jpg"
+                  alt="treadmill"
+                  class="equipment__img"
+                />
+              </div>
+              <h3 class="equipment__title">Treadmills</h3>
+              <p class="equipment__description">
+                Latest cardio machines for running and walking
+              </p>
+            </div>
+
+            <div class="equipment__card">
+              <div class="equipment__image">
+                <img loading="lazy"
+                  src="https://cdn.prod.website-files.com/66aa8fe9dc4db68f448a978f/67e303588153bb149bf83302_BenchPress-Form-3-scaled.webp"
+                  alt="bench press"
+                  class="equipment__img"
+                />
+              </div>
+              <h3 class="equipment__title">Bench Press</h3>
+              <p class="equipment__description">
+                Heavy-duty benches for chest and strength training
+              </p>
+            </div>
+
+            <div class="equipment__card">
+              <div class="equipment__image">
+                <img loading="lazy"
+                  src="https://media.istockphoto.com/id/1023030954/photo/strong-and-fit-woman-pulling-hard-on-a-pulling-machine.jpg?s=612x612&w=0&k=20&c=7lh28Rh90YrLOdPlDrJ70WE4IofYJdf162i5o6cxsnM="
+                  alt="bench press"
+                  class="equipment__img"
+                />
+                <div class="equipment__placeholder"></div>
+              </div>
+              <h3 class="equipment__title">Cable Machine</h3>
+              <p class="equipment__description">
+                Versatile cable systems for multiple exercises
+              </p>
+            </div>
+
+            <div class="equipment__card">
+              <div class="equipment__image">
+                <img loading="lazy"
+                  src="https://hips.hearstapps.com/hmg-prod/images/lifestyle-gym-and-fitness-barcelona-people-on-royalty-free-image-1705340468.jpg?crop=0.668xw:1.00xh;0.332xw,0&resize=640:*"
+                  alt="bench press"
+                  class="equipment__img"
+                />
+                <div class="equipment__placeholder"></div>
+              </div>
+              <h3 class="equipment__title">Elliptical Trainer</h3>
+              <p class="equipment__description">
+                Low-impact cardio equipment for all fitness levels
+              </p>
+            </div>
+
+            <div class="equipment__card">
+              <div class="equipment__image">
+                <img loading="lazy"
+                  src="https://media.istockphoto.com/id/1253868191/photo/rowing-machine-workout.jpg?s=612x612&w=0&k=20&c=kRpADGeTMs7P8VF9DhdxYhrURDBgkrr6dIZFvdyZj4I="
+                  alt="bench press"
+                  class="equipment__img"
+                />
+                <div class="equipment__placeholder"></div>
+              </div>
+              <h3 class="equipment__title">Rowing Machine</h3>
+              <p class="equipment__description">
+                Full-body cardio and strength training equipment
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TRANSFORMATION GALLERY ====================-->
+      <section class="gallery section" id="gallery">
+        <div class="gallery__container container">
+          <div class="section__data">
+            <h2 class="section__subtitle">Real Results</h2>
+            <div class="section__titles">
+              <h1 class="section__title-border">MEMBER</h1>
+              <h1 class="section__title">TRANSFORMATIONS</h1>
+            </div>
+            <p class="gallery__description">
+              Join thousands who have achieved their fitness goals. Your
+              transformation starts today!
+            </p>
+          </div>
+
+          <div class="gallery__content grid">
+            <div class="gallery__card">
+              <img loading="lazy"
+                src="https://artimg.gympik.com/articles/wp-content/uploads/2017/12/What-about-workout.jpg"
+                alt="transformation 1"
+                class="gallery__img"
+              />
+              <div class="gallery__info">
+                <h3>Surendra - Body Transformation</h3>
+                <p>Lost 25 kg in just 6 months with dedication and discipline</p>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&h=600&fit=crop"
+                alt="transformation 2"
+                class="gallery__img"
+              />
+              <div class="gallery__info">
+                <h3>Shivam – Muscle Transformation</h3>
+                <p>Gained approximately 7 kg of lean muscle</p>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img loading="lazy"
+                src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-841195990-1555344319.jpg?crop=0.438xw:0.657xh;0.187xw,0.294xh&resize=640:*"
+                alt="transformation 3"
+                class="gallery__img"
+              />
+              <div class="gallery__info">
+                <h3>Vikas - Got Shredded</h3>
+                <p>6 pack abs achieved</p>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img loading="lazy"
+                src="https://media.istockphoto.com/id/1266590817/photo/girls-doing-exercise-in-gym-friends-gym-workout.jpg?s=612x612&w=0&k=20&c=atzsgVMvAmtlbRt04YXqH4WkNpj8jUs_QMWMIOGH5Y8="
+                alt="transformation 4"
+                class="gallery__img"
+              />
+              <div class="gallery__info">
+                <h3>Shalini - Total Reset</h3>
+                <p>3 months complete change</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CHOOSE US ====================-->
+      <section class="choose section" id="choose">
+        <div class="choose__container container">
+          <div class="section__data">
+            <h2 class="section__subtitle">Best Reason</h2>
+            <div class="section__titles">
+              <h1 class="section__title-border">WHY</h1>
+              <h1 class="section__title">CHOOSE US?</h1>
+            </div>
+          </div>
+
+          <div class="choose__content grid">
+            <div class="choose__card">
+              <h3 class="choose__number">500+</h3>
+              <h4 class="choose__subtitle">Total Members</h4>
+            </div>
+
+            <div class="choose__card">
+              <h3 class="choose__number">20+</h3>
+              <h4 class="choose__subtitle">Best trainers</h4>
+            </div>
+
+            <div class="choose__card">
+              <h3 class="choose__number">25+</h3>
+              <h4 class="choose__subtitle">Programs</h4>
+            </div>
+
+            <div class="choose__card">
+              <h3 class="choose__number">100+</h3>
+              <h4 class="choose__subtitle">Awards</h4>
+            </div>
+          </div>
+
+          <p class="choose__description">
+            Choose your favorite class and start now. Remember the only bad
+            workout is the one you didn't do.
+          </p>
+
+          <img
+            src="assets/img/choose-img.png"
+            alt="choose"
+            class="choose__img"
+          />
+        </div>
+      </section>
+
+      <!--==================== PRICING ====================-->
+      <section class="pricing section" id="pricing">
+        <div class="pricing__container container">
+          <div class="section__data">
+            <h2 class="section__subtitle">Pricing</h2>
+            <div class="section__titles">
+              <h1 class="section__title-border">OUR</h1>
+              <h1 class="section__title">SPECIAL PLAN</h1>
+            </div>
+          </div>
+
+          <div class="pricing__content grid">
+            <article class="pricing__card">
+              <div class="pricing__image">
+                <img src="assets/img/pricing1.png" alt="basic package" class="pricing__img">
+              </div>
+              <h2 class="pricing__title">BASIC PACKAGE</h2>
+              <span class="pricing__number">₹10000</span>
+              <ul class="pricing__list">
+                <li class="pricing__item">6 Days In A Week</li>
+                <li class="pricing__item">Gym Equipment Access</li>
+                <li class="pricing__item">General Workout Plan</li>
+                <li class="pricing__item">Access to Videos</li>
+                <li class="pricing__item">Locker Facility</li>
+              </ul>
+              <button class="pricing__button button">Purchase Now</button>
+            </article>
+
+            <article class="pricing__card pricing__card-active">
+              <div class="pricing__image">
+                <img src="assets/img/pricing2.png" alt="premium package" class="pricing__img">
+              </div>
+              <h2 class="pricing__title">PREMIUM PACKAGE</h2>
+              <span class="pricing__number">₹12000</span>
+              <ul class="pricing__list">
+                <li class="pricing__item">6 Days In A Week</li>
+                <li class="pricing__item">Gym Equipment Access</li>
+                <li class="pricing__item">Advanced Workout Plan</li>
+                <li class="pricing__item">Diet Guidance</li>
+                <li class="pricing__item">Access to Training Videos</li>
+                <li class="pricing__item">Locker Facility</li>
+              </ul>
+              <button class="pricing__button button">Purchase Now</button>
+            </article>
+
+            <article class="pricing__card">
+              <div class="pricing__image">
+                <img src="assets/img/pricing3.png" alt="diamond package" class="pricing__img">
+              </div>
+              <h2 class="pricing__title">DIAMOND PACKAGE</h2>
+              <span class="pricing__number">₹15000</span>
+              <ul class="pricing__list">
+                <li class="pricing__item">6 Days In A Week</li>
+                <li class="pricing__item">Gym Equipment Access</li>
+                <li class="pricing__item">Dedicated Personal Trainer</li>
+                <li class="pricing__item">Customized Diet & Workout Plan</li>
+                <li class="pricing__item">Injury Prevention & Stretching</li>
+                <li class="pricing__item">Priority Support & Full Access</li>
+                <li class="pricing__item">Personal Locker Facility</li>
+              </ul>
+              <button class="pricing__button button">Purchase Now</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIALS ====================-->
+      <section class="testimonials section" id="testimonials">
+        <div class="testimonials__container container">
+          <div class="section__data">
+            <h2 class="section__subtitle">Success Stories</h2>
+            <div class="section__titles">
+              <h1 class="section__title-border">CLIENT</h1>
+              <h1 class="section__title">TESTIMONIALS</h1>
+            </div>
+          </div>
+
+          <div class="testimonials__content grid">
+            <article class="testimonials__card">
+              <div class="testimonials__header">
+                <div class="testimonials__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="testimonials__name">Rajesh Shah</p>
+              </div>
+              <p class="testimonials__text">
+                "The trainers here are exceptional! I lost 12 Kg in 3 months and
+                feel amazing. The program is well-structured and the support is
+                incredible."
+              </p>
+              <p class="testimonials__job">Fitness Enthusiast</p>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="testimonials__header">
+                <div class="testimonials__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="testimonials__name">Palwinder Singh</p>
+              </div>
+              <p class="testimonials__text">
+                "Best decision ever! The personalized coaching and nutrition
+                plans made all the difference. I'm stronger and more confident
+                than ever!"
+              </p>
+              <p class="testimonials__job">Professional</p>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="testimonials__header">
+                <div class="testimonials__stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="testimonials__name">Sunita patel</p>
+              </div>
+              <p class="testimonials__text">
+                "The community here is fantastic! Everyone is supportive and
+                motivating. I've achieved goals I didn't think were possible."
+              </p>
+              <p class="testimonials__job">Business Owner</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CALCULATE ====================-->
+      <section class="calculate section">
+        <div class="calculate__container container">
+          <div class="calculate__content">
+            <div class="section__data">
+              <h2 class="section__subtitle">Calculate</h2>
+              <div class="section__titles">
+                <h1 class="section__title-border">CALCULATE</h1>
+                <h1 class="section__title">YOUR BMI</h1>
+              </div>
+            </div>
+
+            <p class="calculate__description" >
+              The body mass index (BMI) calculator calculates body mass index
+              from your weight and height.
+            </p>
+
+            <form class="calculate__form">
+              <div class="calculate__box">
+                <input
+                  type="number"
+                  id="height"
+                  placeholder="Height"
+                  class="calculate__input"
+                />
+                <label for="height" class="calculate__label">Height</label>
+              </div>
+
+              <div class="calculate__box">
+                <input
+                  type="number"
+                  id="weight"
+                  placeholder="Weight"
+                  class="calculate__input"
+                />
+                <label for="weight" class="calculate__label">Weight</label>
+              </div>
+
+              <button type="button" class="button calculate__button">
+                Calculate Now
+              </button>
+            </form>
+
+            <p id="calculate-message" class="calculate__message"></p>
+          </div>
+
+          <img
+            src="assets/img/calculate-img.png"
+            alt="calculate"
+            class="calculate__img"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" id="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <div class="footer__logo">
+  <img src="assets/img/logo-nav.png" alt="MFZ Gym Logo" />
+  <div class="footer__brand">
+    <span class="footer__brand-main">MFZ</span>
+    <span class="footer__brand-sub">My Fitness Zone</span>
+  </div>
+</div>
+
+          <p class="footer__description">
+            Subscribe for company <br />
+            updates below.
+          </p>
+          <form class="footer__form" id="footer-form">
+  <input
+    type="text"
+    id="name"
+    name="user_name"
+    placeholder="Enter your name"
+    class="footer__input"
+    required
+  />
+
+  <input
+    type="tel"
+    id="phone"
+    name="user_phone"
+    placeholder="Enter your phone number"
+    class="footer__input"
+    required
+  />
+
+  <input
+    type="email"
+    id="email"
+    name="user_email"
+    placeholder="Enter your email"
+    class="footer__input"
+    required
+  />
+
+  <button type="submit" class="button footer__button">
+    Subscribe
+  </button>
+</form>
+
+          <p id="footer-message" class="footer__message"></p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">SERVICES</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Muscle Building</a></li>
+            <li><a href="#" class="footer__link">Cardio Exercise</a></li>
+            <li><a href="#" class="footer__link">Fat Loss</a></li>
+            <li><a href="#" class="footer__link">Weight Lifting</a></li>
+            <li><a href="#" class="footer__link">Strength Training</a></li>
+            <li><a href="#" class="footer__link">Mind & Mobility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">PRICING</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Basic</a></li>
+            <li><a href="#" class="footer__link">Premium</a></li>
+            <li><a href="#" class="footer__link">Diamond</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">COMPANY</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Customers</a></li>
+            <li><a href="#" class="footer__link">Partners</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">FOLLOW US</h3>
+
+          <div class="footer__contact-mini">
+            <p class="footer__contact-line"><i class="ri-phone-fill"></i> <a href="tel:+919925826698">+91 9925826698</a></p>
+            <p class="footer__contact-line"><i class="ri-map-pin-2-fill"></i>4th Floor , ABC-1 , Near Sudama Chowk ,Mota Varachha , Surat.</p>
+          </div>
+
+          <ul class="footer__social">
+            <li>
+              <a
+                href="https://wa.me/919925826698"
+                class="footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="ri-whatsapp-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mfz_motavarachha2.0/?hl=en"
+                class="footer__social-link"
+                target="_blank"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+             <li>
+              <a
+                href="https://twitter.com/"
+                class="footer__social-link"
+                target="_blank"
+                ><i class="ri-twitter-fill"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__copy">
+        <p class="footer__copy-link">
+          © 2026 <strong>MFZ Gym</strong> — Built with Passion & Strength. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js" defer></script>
+
+    <!--=============== PERFORMANCE OPTIMIZATION ===============-->
+    <script src="assets/js/performance.js" defer></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" async></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js" defer></script>
+    
+    <!--=============== SERVICE WORKER (caching) ===============-->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function(e){
+            console.warn('SW registration failed', e);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

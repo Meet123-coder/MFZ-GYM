@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../styles/Pricing.module.css';
-import { pricingData } from '../utils/constants';
+import React from "react";
+import styles from "../styles/Pricing.module.css";
+import { pricingData } from "../utils/constants";
 
 const Pricing = () => {
   return (
@@ -19,11 +19,16 @@ const Pricing = () => {
             <article
               key={plan.id}
               className={`${styles.pricingCard} ${
-                plan.isActive ? styles.pricingCardActive : ''
+                plan.isActive ? styles.pricingCardActive : ""
               }`}
             >
               <div className={styles.pricingImage}>
-                <img loading="lazy" src={plan.icon} alt={plan.name} className={styles.pricingImg} />
+                <img
+                  loading="lazy"
+                  src={`${process.env.PUBLIC_URL}${plan.icon}`}
+                  alt={plan.name}
+                  className={styles.pricingImg}
+                />
               </div>
               <h2 className={styles.pricingTitle}>{plan.name}</h2>
               <span className={styles.pricingNumber}>{plan.price}</span>
@@ -34,7 +39,9 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <button className={`${styles.pricingButton} button`}>Purchase Now</button>
+              <button className={`${styles.pricingButton} button`}>
+                Purchase Now
+              </button>
             </article>
           ))}
         </div>

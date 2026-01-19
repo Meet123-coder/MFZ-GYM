@@ -29,10 +29,10 @@ const Choose = () => {
           one you didn't do.
         </p>
 
-        {/* 🔥 IMAGE WRAPPER */}
+        {/*  IMAGE WRAPPER */}
         <div className={styles.chooseImgWrapper}>
           <img
-            src="/assets/img/choose-img.png"
+            src={`${process.env.PUBLIC_URL}/assets/img/choose-img.png`}
             alt="Choose Us"
             className={styles.chooseImg}
           />

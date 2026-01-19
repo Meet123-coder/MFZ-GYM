@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../styles/Program.module.css';
-import { programsData } from '../utils/constants';
+import React from "react";
+import styles from "../styles/Program.module.css";
+import { programsData } from "../utils/constants";
 
 const Program = () => {
   return (
@@ -19,15 +19,20 @@ const Program = () => {
             <article key={program.id} className={styles.programCard}>
               <img
                 loading="lazy"
-                src={program.icon}
+                src={`${process.env.PUBLIC_URL}${program.icon}`}
                 alt={program.title}
                 height="80"
                 width="80"
               />
+
               <h3 className={styles.programTitle}>{program.title}</h3>
               <p className={styles.programDescription}>{program.description}</p>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a href="#" className={styles.programButton} onClick={e => e.preventDefault()}>
+              <a
+                href="#"
+                className={styles.programButton}
+                onClick={(e) => e.preventDefault()}
+              >
                 <i className="ri-arrow-right-line"></i>
               </a>
             </article>

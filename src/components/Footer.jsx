@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
-import styles from '../styles/Footer.module.css';
+import React, { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import styles from "../styles/Footer.module.css";
 import {
   footerServices,
   footerPricing,
   footerCompany,
   contactInfo,
   socialLinks,
-} from '../utils/constants';
+} from "../utils/constants";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    user_name: '',
-    user_phone: '',
-    user_email: '',
+    user_name: "",
+    user_phone: "",
+    user_email: "",
   });
-  const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState('');
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
 
   /* ================= EMAILJS INIT ================= */
   useEffect(() => {
@@ -37,9 +37,9 @@ const Footer = () => {
     const { user_name, user_phone, user_email } = formData;
 
     if (!user_name || !user_phone || !user_email) {
-      setMessageType('error');
-      setMessage('Please fill all fields');
-      setTimeout(() => setMessage(''), 3000);
+      setMessageType("error");
+      setMessage("Please fill all fields");
+      setTimeout(() => setMessage(""), 3000);
       return;
     }
 
@@ -47,22 +47,22 @@ const Footer = () => {
       .send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        formData
+        formData,
       )
       .then(() => {
-        setMessageType('success');
-        setMessage('You registered successfully ✓');
+        setMessageType("success");
+        setMessage("You registered successfully ✓");
         setFormData({
-          user_name: '',
-          user_phone: '',
-          user_email: '',
+          user_name: "",
+          user_phone: "",
+          user_email: "",
         });
-        setTimeout(() => setMessage(''), 3000);
+        setTimeout(() => setMessage(""), 3000);
       })
       .catch((error) => {
         console.error(error);
-        setMessageType('error');
-        setMessage('Something went wrong!');
+        setMessageType("error");
+        setMessage("Something went wrong!");
       });
   };
 
@@ -72,7 +72,11 @@ const Footer = () => {
         {/* Contact Section */}
         <div className={styles.footerContent}>
           <div className={styles.footerLogo}>
-            <img src="/assets/img/logo-nav.png" alt="MFZ Gym Logo" />
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/img/logo-nav.png`}
+              alt="MFZ Gym Logo"
+            />
+
             <div className={styles.footerBrand}>
               <span className={styles.footerBrandMain}>MFZ</span>
               <span className={styles.footerBrandSub}>My Fitness Zone</span>
@@ -119,10 +123,7 @@ const Footer = () => {
           <p
             className={styles.footerMessage}
             style={{
-              color:
-                messageType === 'error'
-                  ? 'hsl(0, 80%, 64%)'
-                  : '#00b341',
+              color: messageType === "error" ? "hsl(0, 80%, 64%)" : "#00b341",
             }}
           >
             {message}
@@ -190,7 +191,7 @@ const Footer = () => {
           <div className={styles.footerContactMini}>
             <p className={styles.footerContactLine}>
               <i className="ri-phone-fill"></i>
-              <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}>
+              <a href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}>
                 {contactInfo.phone}
               </a>
             </p>
@@ -237,8 +238,8 @@ const Footer = () => {
 
       <div className={styles.footerCopy}>
         <p className={styles.footerCopyLink}>
-          © 2026 <strong>MFZ Gym</strong> — Built with Passion & Strength.
-          All rights reserved.
+          © 2026 <strong>MFZ Gym</strong> — Built with Passion & Strength. All
+          rights reserved.
         </p>
       </div>
     </footer>

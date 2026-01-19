@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from '../styles/Logos.module.css';
-import { logosData } from '../utils/constants';
+import React from "react";
+import styles from "../styles/Logos.module.css";
+import { logosData } from "../utils/constants";
 
 const Logos = () => {
   return (
@@ -10,7 +10,7 @@ const Logos = () => {
           <img
             key={logo.id}
             loading="lazy"
-            src={logo.src}
+            src={`${process.env.PUBLIC_URL}${logo.src}`}
             alt={logo.alt}
             className={styles.logosImg}
           />

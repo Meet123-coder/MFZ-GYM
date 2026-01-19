@@ -43,7 +43,7 @@ const Home = () => {
           </div>
         </div>
 
-        <img src="/assets/img/home-img.png" alt="Fitness Training" className={styles.homeImg} />
+        <img src={`${process.env.PUBLIC_URL}/assets/img/home-img.png`} alt="Fitness Training" className={styles.homeImg} />
       </div>
     </section>
   );

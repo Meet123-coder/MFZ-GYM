@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import styles from '../styles/Calculate.module.css';
-import { calculateBMI } from '../utils/validation';
+import React, { useState } from "react";
+import styles from "../styles/Calculate.module.css";
+import { calculateBMI } from "../utils/validation";
 
 const Calculate = () => {
-  const [height, setHeight] = useState('');
-  const [weight, setWeight] = useState('');
+  const [height, setHeight] = useState("");
+  const [weight, setWeight] = useState("");
   const [bmiResult, setBmiResult] = useState(null);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const handleCalculate = (e) => {
     e.preventDefault();
     setBmiResult(null);
-    setError('');
+    setError("");
 
     if (!height || !weight) {
-      setError('Please fill in both height and weight');
+      setError("Please fill in both height and weight");
       return;
     }
 
@@ -25,7 +25,6 @@ const Calculate = () => {
   return (
     <section className={`${styles.calculate} section`} id="calculate">
       <div className={styles.calculateContainer}>
-        
         {/* LEFT / CENTER FORM */}
         <div className={styles.calculateContent}>
           <h2 className="section__subtitle">Calculate</h2>
@@ -57,9 +56,17 @@ const Calculate = () => {
             </button>
           </form>
 
-          {error && <div className={`${styles.calculateMessage} ${styles.errorMessage}`}>{error}</div>}
+          {error && (
+            <div
+              className={`${styles.calculateMessage} ${styles.errorMessage}`}
+            >
+              {error}
+            </div>
+          )}
           {bmiResult && (
-            <div className={`${styles.calculateMessage} ${styles.successMessage}`}>
+            <div
+              className={`${styles.calculateMessage} ${styles.successMessage}`}
+            >
               BMI: {bmiResult.bmi} <br />
               Status: {bmiResult.health}
             </div>
@@ -69,12 +76,11 @@ const Calculate = () => {
         {/* RIGHT IMAGE */}
         <div className={styles.calculateImgWrapper}>
           <img
-            src="/assets/img/calculate-img.png"
+            src={`${process.env.PUBLIC_URL}/assets/img/calculate-img.png`}
             alt="BMI Calculator"
             className={styles.calculateImg}
           />
         </div>
-
       </div>
     </section>
   );

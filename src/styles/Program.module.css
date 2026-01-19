@@ -1,0 +1,143 @@
+.program {
+  width: 100%;
+  overflow-x: hidden; /* 🔥 prevents cut */
+}
+
+/* ================= CONTAINER ================= */
+.programContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+  /* 🔥 RESET CONTAINER SIDE EFFECT */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* ================= GRID (TRUE CENTER FIX) ================= */
+.programContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  /* 🔥 HARD CENTER */
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  justify-items: center;
+}
+
+/* ================= CARD ================= */
+.programCard {
+  width: 100%;
+  max-width: 420px;
+
+  background: linear-gradient(135deg, hsl(0, 0%, 15%), hsl(0, 100%, 10%));
+  padding: 2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  border: 2px solid rgba(255, 0, 0, 0.2);
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ================= IMAGE ================= */
+.programCard img {
+  height: 80px;
+  width: 80px;
+}
+
+/* ================= HOVER (DESKTOP ONLY) ================= */
+@media (hover: hover) and (pointer: fine) {
+  .programCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--first-color);
+    box-shadow: 0 15px 40px rgba(255, 0, 0, 0.3);
+  }
+}
+
+/* ================= TEXT ================= */
+.programTitle {
+  font-size: var(--h3-font-size);
+  color: white;
+}
+
+.programDescription {
+  font-size: var(--small-font-size);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================= BUTTON ================= */
+.programButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #111, #333);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: flex-end;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* ================= TABLET / iPAD ================= */
+@media screen and (max-width: 1024px) {
+  .programContent {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 767px) {
+  .programContent {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+/* ===== FINAL HARD CENTER LOCK ===== */
+.programContent {
+  width: calc(100% - 2rem);   /* removes right bias */
+  max-width: 900px;           /* slightly tighter */
+  margin: 0 auto;             /* absolute center */
+  padding-left: 0.4rem;
+  padding-right: 2.3rem;
+
+  justify-content: center;
+  justify-items: center;
+}
+
+.programCard {
+  margin: 0 auto;             /* force center */
+}
+
+@media screen and (max-width: 1024px) {
+  .programContent {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .programContent {
+    max-width: 360px;
+  }
+}
+
+.programCard:nth-child(4) img {
+  filter: brightness(0.85) contrast(6) saturate(3.25);
+}

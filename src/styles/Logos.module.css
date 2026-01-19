@@ -1,0 +1,45 @@
+.logos {
+  width: 100%;
+}
+
+/* ================= CONTAINER ================= */
+.logosContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  /* 🔥 CENTER FIX */
+  justify-items: center;     /* centers logos inside grid */
+  justify-content: center;   /* centers grid itself */
+
+  max-width: 1000px;         /* balanced width */
+  margin-inline: auto;
+}
+
+/* ================= LOGO IMAGE ================= */
+.logosImg {
+  width: 100%;
+  max-width: 180px;          /* prevents stretch */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logosImg:hover {
+  transform: scale(1.05);
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+  .logosContainer {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;        /* 🔥 keeps center */
+  }
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 575px) {
+  .logosContainer {
+    grid-template-columns: 1fr;
+    max-width: 300px;        /* 🔥 perfect center */
+  }
+}

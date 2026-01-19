@@ -1,0 +1,144 @@
+/* ================= GALLERY ================= */
+.gallery {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= CONTAINER ================= */
+.galleryContainer {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+/* ================= DESCRIPTION ================= */
+.galleryDescription {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+/* ================= GRID ================= */
+.galleryContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+/* ================= CARD ================= */
+.galleryCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, hsl(0, 0%, 15%), hsl(0, 100%, 10%));
+  border: 2px solid rgba(255, 0, 0, 0.2);
+  height: 350px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* DESKTOP HOVER ONLY */
+@media (hover: hover) and (pointer: fine) {
+  .galleryCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--first-color);
+    box-shadow: 0 15px 40px rgba(255, 0, 0, 0.35);
+  }
+
+  .galleryCard:hover .galleryImg {
+    transform: scale(1.05);
+  }
+
+  .galleryCard:hover .galleryInfo {
+    transform: translateY(0);
+  }
+}
+
+/* ================= IMAGE ================= */
+.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* ================= INFO OVERLAY ================= */
+.galleryInfo {
+  position: absolute;
+  inset: auto 0 0 0;
+
+  /* 🔥 STRONGER GRADIENT FOR READABILITY */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 40%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+
+  padding: 2rem 1.2rem 1.2rem;
+  transform: translateY(40px);
+  transition: transform 0.3s ease;
+}
+
+/* ================= TEXT ================= */
+.galleryInfo h3 {
+  font-size: 1.15rem;
+  font-weight: var(--font-bold);
+  color: #ffffff; /* 🔥 high contrast */
+  margin-bottom: 0.35rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* 🔥 clarity */
+}
+
+.galleryInfo p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85); /* 🔥 readable */
+  line-height: 1.4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+  .galleryContent {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 720px;
+  }
+
+  .galleryInfo h3 {
+    font-size: 1.1rem;
+  }
+
+  .galleryInfo p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 575px) {
+  .galleryContent {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .galleryCard {
+    height: 280px;
+  }
+
+  .galleryInfo {
+    padding: 1.5rem 1rem 1rem;
+    transform: translateY(0); /* 🔥 always visible on mobile */
+  }
+
+  .galleryInfo h3 {
+    font-size: 1.05rem;
+  }
+
+  .galleryInfo p {
+    font-size: 0.9rem;
+  }
+}

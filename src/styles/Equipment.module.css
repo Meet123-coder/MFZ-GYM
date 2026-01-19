@@ -1,0 +1,114 @@
+/* ================= GLOBAL ================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ================= SECTION ================= */
+.equipment {
+  width: 100%;
+  padding: 4rem 0 2rem;
+  overflow-x: hidden;
+}
+
+/* ================= CONTAINER (OVERRIDE GLOBAL .container) ================= */
+.equipmentContainer {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 0 !important; /* 🔥 KILLS container offset */
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  overflow-x: hidden;
+}
+
+/* ================= GRID ================= */
+.equipmentContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  /* 🔥 TRUE CENTER */
+  justify-content: center;
+  margin-inline: auto;
+}
+
+/* ================= CARD ================= */
+.equipmentCard {
+  width: 320px; /* SAME SIZE */
+  background: linear-gradient(135deg, hsl(0, 0%, 15%), hsl(0, 100%, 10%));
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  border: 2px solid rgba(255, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ================= DESKTOP HOVER ONLY ================= */
+@media (hover: hover) and (pointer: fine) {
+  .equipmentCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--first-color);
+    box-shadow: 0 20px 50px rgba(255, 0, 0, 0.3);
+  }
+}
+
+/* ================= IMAGE ================= */
+.equipmentImage {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: hsl(0, 0%, 10%);
+}
+
+.equipmentImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= TEXT ================= */
+.equipmentTitle {
+  font-size: var(--h3-font-size);
+  color: #fff;
+  font-weight: var(--font-bold);
+}
+
+.equipmentDescription {
+  font-size: var(--small-font-size);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .equipmentContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .equipmentContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== FINAL MICRO VISUAL CENTER FIX ===== */
+@media (max-width: 1024px) {
+  .equipmentContent {
+    transform: translateX(-16px); /* ← tiny bit more */
+  }
+}
+
+@media (max-width: 600px) {
+  .equipmentContent {
+    transform: translateX(-16px); /* ← final perfect center */
+  }
+}

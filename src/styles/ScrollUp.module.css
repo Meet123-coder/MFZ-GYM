@@ -1,0 +1,27 @@
+.scrollup {
+  position: fixed;
+  bottom: -20%;
+  right: 1rem;
+  background: linear-gradient(135deg, var(--first-color), hsl(34, 100%, 60%));
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-fixed);
+  transition: .4s;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+  text-decoration: none;
+}
+
+.scrollup:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
+}
+
+.showScroll {
+  bottom: 3rem;
+}

@@ -1,0 +1,244 @@
+.home {
+  background: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 100%, 15%) 50%, hsl(0, 0%, 12%) 100%);
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  perspective: 1000px;
+  scroll-margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.homeContainer {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.homeSubtitle {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  font-family: var(--second-font);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  animation: fadeInUp 0.8s ease;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3);
+  margin-top: 0;
+}
+
+.homeTitle {
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  animation: fadeInUp 0.8s ease 0.1s both;
+  background: linear-gradient(135deg, white, var(--first-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.2);
+  letter-spacing: -1px;
+}
+
+.homeDescription {
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.homeButtons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.8s ease 0.3s both;
+  flex-wrap: wrap;
+}
+
+.homeStats {
+  display: flex;
+  gap: 2rem;
+  animation: fadeInUp 0.8s ease 0.4s both;
+  flex-wrap: wrap;
+}
+
+.homeStat {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.05));
+  border-radius: 0.75rem;
+  border: 2px solid rgba(255, 0, 0, 0.3);
+  min-width: 120px;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.homeStat:hover {
+  background: rgba(255, 0, 0, 0.15);
+  border-color: var(--first-color);
+  transform: translateY(-10px) rotateX(5deg) rotateZ(-2deg);
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+}
+
+.homeStat h3 {
+  font-size: 1.75rem;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-black);
+}
+
+.homeStat p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.homeImg {
+  width: 80%;
+  height: auto;
+  max-width: 500px;
+  margin: 0 auto;
+  animation: float 3s ease-in-out infinite, rotate3d 6s ease-in-out infinite;
+  perspective: 1000px;
+  filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.3));
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: rotateY(0deg) rotateX(5deg);
+  }
+  50% {
+    transform: rotateY(10deg) rotateX(-5deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotateX(5deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    padding-top: 9rem !important;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+    scroll-margin-top: 6rem;
+    overflow-x: hidden;
+  }
+
+  .homeContainer {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+
+  .homeImg {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .homeButtons {
+    flex-direction: column;
+  }
+  
+  .homeSubtitle {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .homeData {
+    margin-top: 0;
+    padding-top: 0.5rem;
+  }
+  
+  .homeTitle {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .home {
+    padding-top: 8.5rem !important;
+    min-height: 100vh;
+    align-items: flex-start;
+    scroll-margin-top: 6rem;
+    overflow-x: hidden;
+  }
+  
+  .homeContainer {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .homeData {
+    padding-top: 1rem;
+    margin-top: 0;
+  }
+  
+  .homeSubtitle {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
+  }
+  
+  .homeTitle {
+    margin-top: 0;
+  }
+  
+  /* Reduce animation translate on mobile to prevent hidden content */
+  .homeSubtitle,
+  .homeTitle,
+  .homeDescription,
+  .homeButtons,
+  .homeStats {
+    animation: fadeInUpMobile 0.8s ease both;
+  }
+  
+  .homeTitle {
+    animation-delay: 0.1s;
+  }
+  
+  .homeDescription {
+    animation-delay: 0.2s;
+  }
+  
+  .homeButtons {
+    animation-delay: 0.3s;
+  }
+  
+  .homeStats {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes fadeInUpMobile {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

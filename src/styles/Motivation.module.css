@@ -1,0 +1,156 @@
+.motivation {
+  background: linear-gradient(135deg, var(--first-color) 0%, hsl(0, 100%, 40%) 100%);
+  padding: 2rem 0; /* 🔥 remove side bias */
+}
+
+/* ================= CONTAINER ================= */
+.motivationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 0; /* 🔥 remove double padding */
+}
+
+/* ================= CONTENT ================= */
+.motivationContent {
+  width: 100%;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  margin-inline: auto; /* 🔥 absolute center */
+  padding-inline: 1rem; /* controlled padding */
+}
+
+/* ================= TITLE ================= */
+.motivationTitle {
+  width: 100%;
+  font-size: var(--bigger-font-size);
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  line-height: 1.35;
+  font-style: italic;
+  font-weight: var(--font-black);
+  text-align: center;
+}
+
+/* ================= TEXT ================= */
+.motivationText {
+  width: 100%;
+  max-width: none; /* 🔥 remove bias */
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ================= BUTTON OVERRIDE ================= */
+.motivation .button.button--primary {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border: 2px solid #111111 !important;
+
+  padding: 0.75rem 1.6rem;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+
+  margin-inline: auto; /* 🔥 hard center */
+}
+
+/* Hover */
+.motivation .button.button--primary:hover {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+  .motivationTitle {
+    font-size: 1.6rem;
+  }
+
+  .motivationText {
+    font-size: 1.05rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 575px) {
+  .motivation {
+    padding: 1.5rem 0;
+  }
+
+  .motivationContent {
+    padding-inline: 0.8rem;
+  }
+
+  .motivationTitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .motivationText {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .motivation .button.button--primary {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.4rem;
+  }
+}
+
+/* ================= ABSOLUTE CENTER OVERRIDE (FINAL) ================= */
+
+/* isolate motivation section from all global layout rules */
+.motivation {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* neutralize container influence completely */
+.motivationContainer {
+  all: unset;                  /* 🔥 removes inherited layout */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* hard-center content block */
+.motivationContent {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center !important;
+}
+
+/* force text centering */
+.motivationTitle,
+.motivationText {
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* force button centering */
+.motivation .button {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

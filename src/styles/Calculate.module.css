@@ -1,0 +1,124 @@
+/* ================= GLOBAL ================= */
+* {
+  box-sizing: border-box;
+}
+
+.calculate {
+  width: 100%;
+  padding: 4rem 1rem;
+  overflow-x: hidden;
+}
+
+/* ================= GRID LAYOUT ================= */
+.calculateContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= FORM ================= */
+.calculateContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.calculateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 420px;
+}
+
+/* INPUTS */
+.calculateBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculateLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.calculateInput {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.calculateButton {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+/* ================= IMAGE ================= */
+.calculateImgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculateImg {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+  .calculateContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .calculateContent {
+    align-items: center; /* 🔥 CENTER FORM */
+    text-align: center;
+  }
+
+  .calculateForm {
+    margin: 0 auto;
+  }
+
+  .calculateButton {
+    align-self: center;
+  }
+
+  .calculateImgWrapper {
+    margin-top: 2rem;
+  }
+
+  .calculateImg {
+    max-width: 280px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+  .calculateImg {
+    max-width: 240px;
+  }
+}
+
+/* ================= MESSAGE ================= */
+.calculateMessage {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.errorMessage {
+  background: #ffe5e5;
+  color: #d60000;
+}
+
+.successMessage {
+  background: #e5ffe9;
+  color: #008a2e;
+}

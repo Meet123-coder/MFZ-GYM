@@ -1,6 +1,13 @@
 /* ============= GOOGLE FONTS ============= */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
 
+
+.main {
+  width: 100%;
+  margin: 0;
+  padding-top: var(--header-height);
+}
+
 /* ============= VARIABLES ============= */
 :root {
   --header-height: 3.5rem;
@@ -63,15 +70,13 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
+  }
 
 html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  width: 100%;
+    width: 100%;
 }
 
 body,
@@ -82,12 +87,16 @@ input {
 }
 
 body {
+  padding-top: var(--header-height);
+}
+
+body {
   background-color: var(--body-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  width: 100%;
+    width: 100%;
+    
 }
 
 h1, h2, h3 {
@@ -161,8 +170,7 @@ img {
 }
 
 .main {
-  overflow-x: hidden;
-  width: 100%;
+    width: 100%;
   margin: 0;
   padding: 0;
 }

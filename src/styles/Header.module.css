@@ -12,6 +12,8 @@
   padding: 0.7rem 0;
 }
 
+
+
 .nav {
   display: flex;
   justify-content: flex-start;
@@ -154,7 +156,6 @@
   position: relative;
   z-index: 10;
   display: inline-block;
-  white-space: nowrap;
   text-decoration: none;
   line-height: 1.2;
 }
@@ -342,7 +343,6 @@
 
   .showMenu {
     left: 0;
-    position: fixed;
     top: 0;
     width: 100%;
     height: 100vh;
@@ -358,7 +358,13 @@
     padding: 0.5rem 1rem;
     font-size: 0.7rem;
     letter-spacing: 0.5px;
-    white-space: nowrap;
+  }
+
+  @media (max-width: 575px) {
+  .navButton {
+    width: 100%;
+    text-align: center;
+    }
   }
 
   .navActions {
@@ -405,9 +411,8 @@
 
   /* Center menu content */
   .showMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   /* vertical center */
+    
+    flex-direction: column;  
     align-items: center;       /* horizontal center */
     text-align: center;
   }
@@ -480,7 +485,6 @@
   .navMenu {
     position: fixed;
     top: 0;
-    left: -100%;
     width: 100%;
     height: 100vh;
     background: linear-gradient(135deg, hsl(0, 0%, 10%) 0%, hsl(0, 100%, 15%) 100%);
@@ -510,7 +514,6 @@
 
   /* Show menu when active */
   .showMenu {
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,3 +527,23 @@
     right: 2rem;
   }
 }
+
+.showMenu ~ .navActions {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    position: fixed;
+    inset: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .showMenu {
+    transform: translateX(0);
+  }
+}
+
+
+

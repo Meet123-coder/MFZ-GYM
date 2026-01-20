@@ -49,7 +49,8 @@ const Header = () => {
       className={`${styles.header} ${isScrolling ? styles["scroll-header"] : ""}`}
       id="header"
     >
-      <nav className={styles.nav + " container"}>
+      <nav className={`${styles.nav} container`}>
+
         <div className={styles.navWrapper}>
           <div className={styles.navLogo}>
             <img
@@ -149,7 +150,7 @@ const Header = () => {
             className={styles.navToggle}
             id="nav-toggle"
             onClick={handleToggleMenu}
-            style={{ display: showMenu ? "none" : undefined }}
+            
           >
             <span className={styles.hamburger}></span>
             <span className={styles.hamburger}></span>

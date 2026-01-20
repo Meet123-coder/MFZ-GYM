@@ -166,7 +166,7 @@
 }
 
 .navToggle {
-  display: none;
+  
   flex-direction: column;
   row-gap: 6px;
   cursor: pointer;
@@ -350,9 +350,6 @@
     margin-top: 0;
   }
 
-  .navToggle {
-    display: flex;
-  }
 
   .navButton {
     padding: 0.5rem 1rem;
@@ -545,5 +542,9 @@
   }
 }
 
+
+.showMenu ~ .navActions .navToggle {
+  display: none;
+}
 
 

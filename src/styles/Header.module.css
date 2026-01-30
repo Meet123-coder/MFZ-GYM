@@ -168,6 +168,7 @@
 .navToggle {
   
   flex-direction: column;
+  display: flex;
   row-gap: 6px;
   cursor: pointer;
   position: relative;
@@ -393,6 +394,10 @@
   }
 }
 
+.navToggle {
+    display: flex;
+  }
+
 /* Large screens */
 @media screen and (min-width: 1024px) {
   .navButton {
@@ -400,6 +405,11 @@
     font-size: 0.8rem;
   }
 }
+
+
+.navToggle {
+    display: none;
+  }
 
 /* ================= HAMBURGER MENU FIX ================= */
 
@@ -471,7 +481,7 @@
 }
 
 /* ================= iPAD / TABLET NAVBAR FIX ================= */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
   /* Reduce crowding */
   .nav {
@@ -489,12 +499,9 @@
     transition: 0.3s;
     padding: 4rem 2rem;
     z-index: 10000;
-  }
-
-  /* Show hamburger */
-  .navToggle {
     display: flex;
   }
+
 
   /* Stack menu items */
   .navList {
@@ -525,16 +532,17 @@
   }
 }
 
-.showMenu ~ .navActions {
-  display: none;
-}
+
 
 @media (max-width: 768px) {
   .navMenu {
     position: fixed;
     inset: 0;
+    background: linear-gradient(135deg, hsl(0, 0%, 10%), hsl(0, 100%, 15%));
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    z-index: 9999;
+    padding: 5rem 2rem;
   }
 
   .showMenu {
@@ -543,8 +551,8 @@
 }
 
 
-.showMenu ~ .navActions .navToggle {
-  display: none;
-}
+
+
+
 
 

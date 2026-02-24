@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/MFZ-GYM/static/css/main.a5b87630.css",
-    "main.js": "/MFZ-GYM/static/js/main.10a8f018.js",
+    "main.css": "/MFZ-GYM/static/css/main.8fee0a09.css",
+    "main.js": "/MFZ-GYM/static/js/main.94e9ab9d.js",
     "static/css/397.a46f9b29.chunk.css": "/MFZ-GYM/static/css/397.a46f9b29.chunk.css",
     "static/js/397.beaa0222.chunk.js": "/MFZ-GYM/static/js/397.beaa0222.chunk.js",
     "static/css/800.62249cbe.chunk.css": "/MFZ-GYM/static/css/800.62249cbe.chunk.css",
     "static/js/800.0b3fc509.chunk.js": "/MFZ-GYM/static/js/800.0b3fc509.chunk.js",
     "static/css/152.3e4b4059.chunk.css": "/MFZ-GYM/static/css/152.3e4b4059.chunk.css",
-    "static/js/152.ca235066.chunk.js": "/MFZ-GYM/static/js/152.ca235066.chunk.js",
+    "static/js/152.cd9e3d1e.chunk.js": "/MFZ-GYM/static/js/152.cd9e3d1e.chunk.js",
     "static/css/818.8671396e.chunk.css": "/MFZ-GYM/static/css/818.8671396e.chunk.css",
     "static/js/818.ec91e471.chunk.js": "/MFZ-GYM/static/js/818.ec91e471.chunk.js",
     "static/js/856.b7b3c9af.chunk.js": "/MFZ-GYM/static/js/856.b7b3c9af.chunk.js",
     "index.html": "/MFZ-GYM/index.html",
-    "main.a5b87630.css.map": "/MFZ-GYM/static/css/main.a5b87630.css.map",
-    "main.10a8f018.js.map": "/MFZ-GYM/static/js/main.10a8f018.js.map",
+    "main.8fee0a09.css.map": "/MFZ-GYM/static/css/main.8fee0a09.css.map",
+    "main.94e9ab9d.js.map": "/MFZ-GYM/static/js/main.94e9ab9d.js.map",
     "397.a46f9b29.chunk.css.map": "/MFZ-GYM/static/css/397.a46f9b29.chunk.css.map",
     "397.beaa0222.chunk.js.map": "/MFZ-GYM/static/js/397.beaa0222.chunk.js.map",
     "800.62249cbe.chunk.css.map": "/MFZ-GYM/static/css/800.62249cbe.chunk.css.map",
     "800.0b3fc509.chunk.js.map": "/MFZ-GYM/static/js/800.0b3fc509.chunk.js.map",
     "152.3e4b4059.chunk.css.map": "/MFZ-GYM/static/css/152.3e4b4059.chunk.css.map",
-    "152.ca235066.chunk.js.map": "/MFZ-GYM/static/js/152.ca235066.chunk.js.map",
+    "152.cd9e3d1e.chunk.js.map": "/MFZ-GYM/static/js/152.cd9e3d1e.chunk.js.map",
     "818.8671396e.chunk.css.map": "/MFZ-GYM/static/css/818.8671396e.chunk.css.map",
     "818.ec91e471.chunk.js.map": "/MFZ-GYM/static/js/818.ec91e471.chunk.js.map",
     "856.b7b3c9af.chunk.js.map": "/MFZ-GYM/static/js/856.b7b3c9af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5b87630.css",
-    "static/js/main.10a8f018.js"
+    "static/css/main.8fee0a09.css",
+    "static/js/main.94e9ab9d.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MFZ-GYM/static/css/main.8acc2023.css",
-    "main.js": "/MFZ-GYM/static/js/main.63bdc2a0.js",
+    "main.css": "/MFZ-GYM/static/css/main.11f9bbee.css",
+    "main.js": "/MFZ-GYM/static/js/main.285fd746.js",
     "static/css/397.a46f9b29.chunk.css": "/MFZ-GYM/static/css/397.a46f9b29.chunk.css",
     "static/js/397.beaa0222.chunk.js": "/MFZ-GYM/static/js/397.beaa0222.chunk.js",
     "static/css/800.62249cbe.chunk.css": "/MFZ-GYM/static/css/800.62249cbe.chunk.css",
@@ -12,8 +12,8 @@
     "static/js/818.ec91e471.chunk.js": "/MFZ-GYM/static/js/818.ec91e471.chunk.js",
     "static/js/856.b7b3c9af.chunk.js": "/MFZ-GYM/static/js/856.b7b3c9af.chunk.js",
     "index.html": "/MFZ-GYM/index.html",
-    "main.8acc2023.css.map": "/MFZ-GYM/static/css/main.8acc2023.css.map",
-    "main.63bdc2a0.js.map": "/MFZ-GYM/static/js/main.63bdc2a0.js.map",
+    "main.11f9bbee.css.map": "/MFZ-GYM/static/css/main.11f9bbee.css.map",
+    "main.285fd746.js.map": "/MFZ-GYM/static/js/main.285fd746.js.map",
     "397.a46f9b29.chunk.css.map": "/MFZ-GYM/static/css/397.a46f9b29.chunk.css.map",
     "397.beaa0222.chunk.js.map": "/MFZ-GYM/static/js/397.beaa0222.chunk.js.map",
     "800.62249cbe.chunk.css.map": "/MFZ-GYM/static/css/800.62249cbe.chunk.css.map",
@@ -25,7 +25,7 @@
     "856.b7b3c9af.chunk.js.map": "/MFZ-GYM/static/js/856.b7b3c9af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8acc2023.css",
-    "static/js/main.63bdc2a0.js"
+    "static/css/main.11f9bbee.css",
+    "static/js/main.285fd746.js"
   ]
 }

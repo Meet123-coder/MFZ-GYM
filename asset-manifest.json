@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MFZ-GYM/static/css/main.ce105a3b.css",
+    "main.css": "/MFZ-GYM/static/css/main.0ffd902c.css",
     "main.js": "/MFZ-GYM/static/js/main.3abb219f.js",
     "static/css/397.a46f9b29.chunk.css": "/MFZ-GYM/static/css/397.a46f9b29.chunk.css",
     "static/js/397.beaa0222.chunk.js": "/MFZ-GYM/static/js/397.beaa0222.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/818.ec91e471.chunk.js": "/MFZ-GYM/static/js/818.ec91e471.chunk.js",
     "static/js/856.b7b3c9af.chunk.js": "/MFZ-GYM/static/js/856.b7b3c9af.chunk.js",
     "index.html": "/MFZ-GYM/index.html",
-    "main.ce105a3b.css.map": "/MFZ-GYM/static/css/main.ce105a3b.css.map",
+    "main.0ffd902c.css.map": "/MFZ-GYM/static/css/main.0ffd902c.css.map",
     "main.3abb219f.js.map": "/MFZ-GYM/static/js/main.3abb219f.js.map",
     "397.a46f9b29.chunk.css.map": "/MFZ-GYM/static/css/397.a46f9b29.chunk.css.map",
     "397.beaa0222.chunk.js.map": "/MFZ-GYM/static/js/397.beaa0222.chunk.js.map",
@@ -25,7 +25,7 @@
     "856.b7b3c9af.chunk.js.map": "/MFZ-GYM/static/js/856.b7b3c9af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce105a3b.css",
+    "static/css/main.0ffd902c.css",
     "static/js/main.3abb219f.js"
   ]
 }
